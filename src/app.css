@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Black.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --background: 217 82% 15%; /* #0B2447 /
+    --foreground: 0 0% 93%; / #FFFFFF */
+
+    --muted: 217 60% 10%; /* Slightly muted background /
+    --muted-foreground: 0 0% 80%; / Muted text color */
+
+    --popover: 217 82% 15%; /* #0B2447 /
+    --popover-foreground: 0 0% 93%; / #FFFFFF */
+
+    --card: 217 82% 15%; /* #0B2447 /
+    --card-foreground: 0 0% 93%; / #FFFFFF */
+
+    --border: 217 60% 10%; /* Darker border shade /
+    --input: 217 60% 10%; / Same as border for consistency */
+
+    --primary: 216 57% 27%; /* #19376D /
+    --primary-foreground: 0 0% 93%; / #FFFFFF */
+
+    --secondary: 220 50% 60%; /* #576CBC /
+    --secondary-foreground: 0 0% 93%; / #FFFFFF */
+
+    --accent: 191 45% 81%; /* #A5D7E8 /
+    --accent-foreground: 217 82% 15%; / #0B2447 */
+
+    --destructive: 0 62.8% 30.6%; /* Error state /
+    --destructive-foreground: 0 0% 93%; / #FFFFFF */
+
+    --ring: 220 50% 60%; /* Focus rings in secondary color /
+    --radius: 0.5rem; / Standard border radius */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Poppins', sans-serif;
+  }
+}
