@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "web-player-app",
+  "productName": "Satsang",
   "version": "0.1.0",
-  "identifier": "com.web-player-app.app",
+  "identifier": "com.satsang.app",
   "build": {
     "beforeDevCommand": "pnpm dev",
     "devUrl": "http://localhost:1420",
@@ -12,13 +12,17 @@
   "app": {
     "windows": [
       {
-        "title": "web-player-app",
+        "title": "Satsang",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "fullscreen": true,
+        "resizable": true,
+        "decorations": true,
+        "closable": true
       }
     ],
     "security": {
-      "csp": null
+      "csp": null 
     }
   },
   "bundle": {
